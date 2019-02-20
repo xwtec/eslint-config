@@ -198,10 +198,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@xwtec/eslint-config@3.4.3":
+"@xwtec/eslint-config@~3.4.2":
   version "3.4.3"
-  resolved "http://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-3.4.3.tgz#9bffae20eca2f9a9ee550f5e7caa5b0447b4c7f2"
-  integrity sha1-m/+uIOyi+anuVQ9efKpbBEe0x/I=
+  resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-3.4.3.tgz#9bffae20eca2f9a9ee550f5e7caa5b0447b4c7f2"
+  integrity sha512-awAff1zLlu42MBknD/qldX+ZUIYUv83LF7aCkVKTTfn5PmjJYcel80c0n7KrGRm8GIZOF+R86G/rq7/BRNRI9A==
   dependencies:
     eslint-config-airbnb-base "^13.1.0"
     eslint-config-prettier "^4.0.0"
