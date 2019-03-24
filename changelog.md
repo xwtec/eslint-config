@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.8.2
+
+- remove `promise` `unicore` `eslint-comment`
+
 ## v3.8.1
 
 - disable `eslint-plugin-eslint-comments` plugin, for this project

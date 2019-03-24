@@ -4,15 +4,6 @@ module.exports = {
     // airbnb
     './configs/airbnb/airbnb.js',
 
-    // promise
-    './configs/promise/promise.js',
-
-    // unicorn
-    './configs/unicorn/unicorn.js',
-
-    // eslint-comments
-    // './configs/eslint-comments/eslint-comments.js',
-
     // prettier
     './configs/prettier/prettier.js',
 
