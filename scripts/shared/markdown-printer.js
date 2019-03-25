@@ -9,6 +9,10 @@ const MARKDOWN_TH_ALIGN = [
 function markdown({names, data}) {
   const [localName, foreignName] = names
 
+  if (data.length === 0) {
+    return 'No difference.'
+  }
+
   return [
     ['Rule', localName, foreignName],
     MARKDOWN_TH_ALIGN,

@@ -15,43 +15,31 @@ module.exports = {
     'consistent-return': 'off',
 
     // allow return assign in parents
-    'no-return-assign': ['error', 'except-parens'],
+    'no-return-assign': 'off',
 
-    // don't allow comparisons to null
-    'no-eq-null': 'error',
-
-    // disallow else after a return in an if
     // https://eslint.org/docs/rules/no-else-return
-    'no-else-return': ['warn', {allowElseIf: false}],
+    'no-else-return': 'off',
 
     // enforces return statements in callbacks of array's methods
     // https://eslint.org/docs/rules/array-callback-return
     'array-callback-return': 'off',
 
-    // specify curly brace conventions for all control statements
-    curly: ['error', 'all'],
+    // make sure for-in loops have an if statement
+    'guard-for-in': 'off',
 
     // disallow creation of functions within loops
-    'no-loop-func': 'warn',
+    'no-loop-func': 'off',
 
     // disallow use of `javascript:` urls.
-    'no-script-url': 'warn',
+    'no-script-url': 'off',
 
     // disallow use of new operator when not part of the assignment or comparison
     'no-new': 'off',
 
-    // disallow implicit type conversions
-    // https://eslint.org/docs/rules/no-implicit-coercion
-    'no-implicit-coercion': [
-      'warn',
-      {
-        boolean: false,
-        number: true,
-        string: true,
-        allow: [],
-      },
-    ],
+    // disallow use of new operator for Function object
+    'no-new-func': 'off',
 
-    'require-await': 'warn',
+    // https://eslint.org/docs/rules/no-implicit-coercion
+    'no-implicit-coercion': 'off',
   },
 }

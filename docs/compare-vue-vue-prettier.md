@@ -10,6 +10,7 @@
 | [vue/block-spacing](https://vuejs.github.io/eslint-plugin-vue/rules/block-spacing.html) |    off    |
 | [vue/brace-style](https://vuejs.github.io/eslint-plugin-vue/rules/brace-style.html)     |    off    |
 | [vue/comma-dangle](https://vuejs.github.io/eslint-plugin-vue/rules/comma-dangle.html)   |    off    |
+| [vue/no-template-shadow](https://eslint.vuejs.org/rules/no-template-shadow.html)        |    off    |                                   warn                                   |
 | [vue/no-unused-components](https://eslint.vuejs.org/rules/no-unused-components.html)    |    off    |                                  error                                   |
 | [vue/no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)                |    off    |                                  error                                   |
 | [vue/require-default-prop](https://eslint.vuejs.org/rules/require-default-prop.html)    |    off    |                                   warn                                   |
@@ -49,7 +50,7 @@
 | [vue/no-side-effects-in-computed-properties](https://eslint.vuejs.org/rules/no-side-effects-in-computed-properties.html)       |   error   |                                  error                                   |
 | [vue/no-spaces-around-equal-signs-in-attribute](https://eslint.vuejs.org/rules/no-spaces-around-equal-signs-in-attribute.html) |    off    |                                   off                                    |
 | [vue/no-template-key](https://eslint.vuejs.org/rules/no-template-key.html)                                                     |   error   |                                  error                                   |
-| [vue/no-template-shadow](https://eslint.vuejs.org/rules/no-template-shadow.html)                                               |   warn    |                                   warn                                   |
+| [vue/no-template-shadow](https://eslint.vuejs.org/rules/no-template-shadow.html)                                               |    off    |                                   warn                                   |
 | [vue/no-textarea-mustache](https://eslint.vuejs.org/rules/no-textarea-mustache.html)                                           |   error   |                                  error                                   |
 | [vue/no-unused-components](https://eslint.vuejs.org/rules/no-unused-components.html)                                           |    off    |                                  error                                   |
 | [vue/no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)                                                       |    off    |                                  error                                   |
