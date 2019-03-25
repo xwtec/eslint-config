@@ -56,7 +56,7 @@ const LANG_CONFIG = {
   markdown: {
     // more ext: mdown,mdwn,mkd,mkdn,mkdown
     ext: 'md,markdown',
-    singleQuote: false,
+    singleQuote: true,
   },
   yaml: {
     ext: 'yaml,yml',
