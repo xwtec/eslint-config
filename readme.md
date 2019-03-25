@@ -68,6 +68,7 @@ this config is based on `airbnb` and `prettier`, with modification
 
 - [compare `xwtec` to `airbnb-base`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-xwtec-airbnb.md)
 - [compare `xwtec` to `airbnb-base` + `prettier`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-xwtec-airbnb-prettier.md)
+- [compare `xwtec` to `prettier`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-xwtec-prettier.md)
 - [compare `xwtec/legacy` to `airbnb-base/legacy`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-legacy-airbnb-legacy.md)
 - [compare `xwtec/legacy` to `airbnb-base/legacy` + `prettier`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-legacy-airbnb-legacy-prettier.md)
 - [compare `xwtec/vue` to `vue`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-vue-vue.md)
