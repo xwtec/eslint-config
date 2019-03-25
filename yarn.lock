@@ -172,10 +172,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@xwtec/eslint-config@^3.9.1":
-  version "3.9.1"
-  resolved "http://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-3.9.1.tgz#1377799967151d9445b694a7f68f230884360bd7"
-  integrity sha1-E3d5mWcVHZRFtpSn9o8jCIQ2C9c=
+"@xwtec/eslint-config@^3.9.2":
+  version "3.9.2"
+  resolved "http://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-3.9.2.tgz?cache=0&other_urls=http%3A%2F%2Fregistry.npm.taobao.org%2F%40xwtec%2Feslint-config%2Fdownload%2F%40xwtec%2Feslint-config-3.9.2.tgz#b0dbc8c3b90129e2ba1fdb6d4d6bbdffb668bcd5"
+  integrity sha1-sNvIw7kBKeK6H9ttTWu9/7ZovNU=
   dependencies:
     eslint-config-airbnb-base "^13.1.0"
     eslint-config-prettier "^4.1.0"
