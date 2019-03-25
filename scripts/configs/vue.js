@@ -1,7 +1,7 @@
 export default {
-  name: 'vue/recommended',
+  name: 'vue/strongly-recommended',
   config: {
     plugins: ['vue'],
-    extends: ['plugin:vue/recommended'],
+    extends: ['plugin:vue/strongly-recommended'],
   },
 }

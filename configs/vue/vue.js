@@ -3,7 +3,7 @@
 
 module.exports = {
   plugins: ['vue'],
-  extends: ['plugin:vue/recommended'],
+  extends: ['plugin:vue/strongly-recommended'],
   rules: {
     // allow unused vars
     'vue/no-unused-vars': 'warn',
