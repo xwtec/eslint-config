@@ -45,6 +45,8 @@ module.exports = {
 }
 ```
 
+- [difference from default](https://github.com/xwtec/eslint-config/blob/master/doocs/compare-xwtec-legacy.md)
+
 ### vue
 
 ```js
@@ -60,13 +62,16 @@ module.exports = {
 npx eslint **/*.js
 ```
 
-## Todos
+## Rules
 
-- [x] airbnb config
-- [x] prettier plugin
-- [x] vue plugin
-- [ ] write documents explain rules
-- [ ] test
+this config is based on `airbnb` and `prettier`, with modification
+
+- [compare `xwtec` to `airbnb-base`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-xwtec-airbnb.md)
+- [compare `xwtec` to `airbnb-base` + `prettier`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-xwtec-airbnb-prettier.md)
+- [compare `xwtec/legacy` to `airbnb-base/legacy`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-legacy-airbnb-legacy.md)
+- [compare `xwtec/legacy` to `airbnb-base/legacy` + `prettier`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-legacy-airbnb-legacy-prettier.md)
+- [compare `xwtec/vue` to `vue`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-xwtec-vue.md)
+- [compare `xwtec/vue` to `vue/recommended` + `prettier` + `prettier/vue`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-xwtec-vue-prettier.md)
 
 ## Links
 

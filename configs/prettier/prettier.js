@@ -1,6 +1,6 @@
 module.exports = {
   plugins: ['prettier'],
-  extends: ['eslint-config-prettier', 'eslint-config-prettier/unicorn'].map(
+  extends: ['eslint-config-prettier'].map(
     require.resolve
   ),
   rules: {

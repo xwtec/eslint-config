@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: ['promise'],
   extends: [
     // airbnb
     './configs/airbnb/airbnb.js',
