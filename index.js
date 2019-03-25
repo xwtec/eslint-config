@@ -1,12 +1,9 @@
 module.exports = {
   extends: [
-    // airbnb
-    './configs/airbnb/airbnb.js',
-
     // prettier
     './configs/prettier/prettier.js',
 
-    // own rules
-    './configs/own/own.js',
+    // basic rules
+    './configs/basic/basic.js',
   ].map(require.resolve),
 }

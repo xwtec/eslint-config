@@ -3,7 +3,7 @@
 
 module.exports = {
   plugins: ['vue'],
-  extends: ['plugin:vue/strongly-recommended'],
+  extends: ['plugin:vue/essential'],
   rules: {
     // allow unused vars
     'vue/no-unused-vars': 'off',
@@ -11,13 +11,20 @@ module.exports = {
     // allow unused components
     'vue/no-unused-components': 'off',
 
-    // https://vuejs.github.io/eslint-plugin-vue/rules/this-in-template.html
-    'vue/this-in-template': ['warn', 'never'],
+    'vue/no-use-v-if-with-v-for': 'off',
 
-    'vue/require-default-prop': 'off',
+    'vue/require-component-is': 'warn',
 
-    'vue/require-prop-types': 'off',
+    'vue/require-render-return': 'warn',
 
-    'vue/no-template-shadow': 'off',
+    'vue/require-v-for-key': 'off',
+
+    'vue/require-valid-default-prop': 'warn',
+
+    'vue/return-in-computed-property': 'warn',
+
+    'vue/use-v-on-exact': 'off',
+
+    'vue/valid-template-root': 'warn',
   },
 }

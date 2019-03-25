@@ -7,16 +7,13 @@
 
 module.exports = {
   extends: [
-    // airbnb
-    './configs/airbnb/airbnb.js',
-
     // vue
     './configs/vue/vue.js',
 
     // prettier
     './configs/prettier/prettier-vue.js',
 
-    // own rules
-    './configs/own/own.js',
+    // basic rules
+    './configs/basic/basic.js',
   ].map(require.resolve),
 }

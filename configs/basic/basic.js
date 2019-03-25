@@ -1,4 +1,10 @@
 module.exports = {
+  extends: [
+    './errors.js',
+    './best-practices.js',
+    './variables.js',
+    './es6.js',
+  ].map(require.resolve),
   env: {
     es6: true,
   },

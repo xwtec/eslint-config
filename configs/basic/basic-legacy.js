@@ -1,5 +1,7 @@
 module.exports = {
-  extends: ['./own.js'].map(require.resolve),
+  extends: ['./errors.js', './best-practices.js', './variables.js'].map(
+    require.resolve
+  ),
   env: {
     es6: false,
     node: false,
@@ -13,10 +15,11 @@ module.exports = {
     },
   },
   rules: {
-    // 必须严格模式
     strict: ['warn', 'function'],
 
-    // catch 变量
     'no-catch-shadow': 'warn',
+
+    // enforce one true comma style
+    'comma-style': 'warn',
   },
 }

@@ -4,7 +4,9 @@
 
 ## difference only
 
-No difference.
+| Rule                                                                             | xwtec | prettier |
+| :------------------------------------------------------------------------------- | :---: | :------: |
+| [no-unexpected-multiline](https://eslint.org/docs/rules/no-unexpected-multiline) | warn  |   off    |
 
 ## all rules
 
@@ -56,7 +58,7 @@ No difference.
 | [no-spaced-func](https://eslint.org/docs/rules/no-spaced-func)                                     |  off  |   off    |
 | [no-tabs](https://eslint.org/docs/rules/no-tabs)                                                   |  off  |   off    |
 | [no-trailing-spaces](https://eslint.org/docs/rules/no-trailing-spaces)                             |  off  |   off    |
-| [no-unexpected-multiline](https://eslint.org/docs/rules/no-unexpected-multiline)                   |  off  |   off    |
+| [no-unexpected-multiline](https://eslint.org/docs/rules/no-unexpected-multiline)                   | warn  |   off    |
 | [no-whitespace-before-property](https://eslint.org/docs/rules/no-whitespace-before-property)       |  off  |   off    |
 | no-wrap-func                                                                                       |  off  |   off    |
 | [nonblock-statement-body-position](https://eslint.org/docs/rules/nonblock-statement-body-position) |  off  |   off    |

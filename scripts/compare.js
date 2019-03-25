@@ -10,12 +10,6 @@ const configs = {
   xwtec: require('./configs/xwtec-default').default,
   'xwtec/legacy': require('./configs/xwtec-legacy').default,
   'xwtec/vue': require('./configs/xwtec-vue').default,
-  // airbnb
-  airbnb: require('./configs/airbnb').default,
-  'airbnb+prettier': require('./configs/airbnb-prettier').default,
-  // legacy
-  'airbnb/legacy': require('./configs/airbnb-legacy').default,
-  'airbnb/legacy+prettier': require('./configs/airbnb-legacy-prettier').default,
   // plugins
   prettier: require('./configs/prettier').default,
   // vue
@@ -24,52 +18,18 @@ const configs = {
 }
 
 const compares = [
-  // default
-  {
-    filter({prefix}) {
-      return !prefix
-    },
-    file: 'compare-xwtec-airbnb',
-    local: configs.xwtec,
-    foreign: configs.airbnb,
-  },
-  {
-    filter({prefix}) {
-      return !prefix
-    },
-    file: 'compare-xwtec-airbnb-prettier',
-    local: configs.xwtec,
-    foreign: configs['airbnb+prettier'],
-  },
-  // legacy
-  {
-    filter({prefix}) {
-      return !prefix
-    },
-    file: 'compare-legacy-airbnb-legacy',
-    local: configs['xwtec/legacy'],
-    foreign: configs['airbnb/legacy'],
-  },
-  {
-    filter({prefix}) {
-      return !prefix
-    },
-    file: 'compare-legacy-airbnb-legacy-prettier',
-    local: configs['xwtec/legacy'],
-    foreign: configs['airbnb/legacy+prettier'],
-  },
   // vue
   {
-    filter({prefix}) {
-      return prefix === 'vue'
+    filter({prefix, id}, localRules, foreignRules) {
+      return prefix === 'vue' && has(foreignRules, id)
     },
     file: 'compare-vue-vue',
     local: configs['xwtec/vue'],
     foreign: configs.vue,
   },
   {
-    filter({prefix}) {
-      return prefix === 'vue'
+    filter({prefix, id}, localRules, foreignRules) {
+      return prefix === 'vue' && has(foreignRules, id)
     },
     file: 'compare-vue-vue-prettier',
     local: configs['xwtec/vue'],
@@ -77,11 +37,8 @@ const compares = [
   },
   // plugins
   {
-    filter({prefix, id}, localRules, foreignRules) {
-      return (
-        (prefix === 'prettier' || prefix === 'unicorn' || !prefix) &&
-        has(foreignRules, id)
-      )
+    filter({id}, localRules, foreignRules) {
+      return has(foreignRules, id)
     },
     file: 'compare-xwtec-prettier',
     local: configs.xwtec,
