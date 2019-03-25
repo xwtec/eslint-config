@@ -1,6 +1,6 @@
 {
   "name": "@xwtec/eslint-config",
-  "version": "3.9.4",
+  "version": "4.0.0",
   "description": "ESLint Configuration for xwtec projects",
   "main": "index.js",
   "keywords": ["xwtec", "eslint", "config"],
