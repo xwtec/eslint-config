@@ -32,7 +32,12 @@ module.exports = {
     'no-duplicate-case': 'warn',
 
     // disallow empty statements
-    'no-empty': 'warn',
+    'no-empty': [
+      'warn',
+      {
+        allowEmptyCatch: true,
+      },
+    ],
 
     // disallow the use of empty character classes in regular expressions
     'no-empty-character-class': 'warn',

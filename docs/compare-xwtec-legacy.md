@@ -44,7 +44,6 @@
 | generator-star                                                                                     |  off  |     off      |
 | [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)                     |  off  |     off      |
 | [getter-return](https://eslint.org/docs/rules/getter-return)                                       | warn  |     warn     |
-| [guard-for-in](https://eslint.org/docs/rules/guard-for-in)                                         | warn  |     warn     |
 | [implicit-arrow-linebreak](https://eslint.org/docs/rules/implicit-arrow-linebreak)                 |  off  |     off      |
 | [indent](https://eslint.org/docs/rules/indent)                                                     |  off  |     off      |
 | [indent-legacy](https://eslint.org/docs/rules/indent-legacy)                                       |  off  |     off      |

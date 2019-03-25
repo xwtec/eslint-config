@@ -31,7 +31,6 @@
 | warn | [comma-style](https://eslint.org/docs/rules/comma-style)                                   | enforce consistent comma style                                                        |
 | warn | [for-direction](https://eslint.org/docs/rules/for-direction)                               | enforce "for" loop update clause moving the counter in the right direction.           |
 | warn | [getter-return](https://eslint.org/docs/rules/getter-return)                               | enforce `return` statements in getters                                                |
-| warn | [guard-for-in](https://eslint.org/docs/rules/guard-for-in)                                 | require `for-in` loops to include an `if` statement                                   |
 | warn | [no-case-declarations](https://eslint.org/docs/rules/no-case-declarations)                 | disallow lexical declarations in case clauses                                         |
 | warn | [no-catch-shadow](https://eslint.org/docs/rules/no-catch-shadow)                           | disallow `catch` clause parameters from shadowing variables in the outer scope        |
 | warn | [no-compare-neg-zero](https://eslint.org/docs/rules/no-compare-neg-zero)                   | disallow comparing against -0                                                         |

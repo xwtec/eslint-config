@@ -11,9 +11,6 @@ module.exports = {
     // https://eslint.org/docs/rules/eqeqeq
     eqeqeq: ['error', 'always', {null: 'ignore'}],
 
-    // make sure for-in loops have an if statement
-    'guard-for-in': 'warn',
-
     // disallow use of arguments.caller or arguments.callee
     'no-caller': 'error',
 
