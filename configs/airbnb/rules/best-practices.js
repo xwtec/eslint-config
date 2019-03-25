@@ -12,13 +12,7 @@ module.exports = {
     // allow reassignment of function parameters
     'no-param-reassign': 'off',
 
-    // allow function returns no value
-    'consistent-return': [
-      'warn',
-      {
-        treatUndefinedAsUnspecified: true,
-      },
-    ],
+    'consistent-return': 'off',
 
     // allow return assign in parents
     'no-return-assign': ['error', 'except-parens'],
@@ -32,7 +26,7 @@ module.exports = {
 
     // enforces return statements in callbacks of array's methods
     // https://eslint.org/docs/rules/array-callback-return
-    'array-callback-return': ['warn', {allowImplicit: true}],
+    'array-callback-return': 'off',
 
     // specify curly brace conventions for all control statements
     curly: ['error', 'all'],
@@ -44,7 +38,7 @@ module.exports = {
     'no-script-url': 'warn',
 
     // disallow use of new operator when not part of the assignment or comparison
-    'no-new': 'warn',
+    'no-new': 'off',
 
     // disallow implicit type conversions
     // https://eslint.org/docs/rules/no-implicit-coercion

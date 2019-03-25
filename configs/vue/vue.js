@@ -6,17 +6,16 @@ module.exports = {
   extends: ['plugin:vue/strongly-recommended'],
   rules: {
     // allow unused vars
-    'vue/no-unused-vars': 'warn',
+    'vue/no-unused-vars': 'off',
 
     // allow unused components
-    'vue/no-unused-components': [
-      'warn',
-      {
-        ignoreWhenBindingPresent: true,
-      },
-    ],
+    'vue/no-unused-components': 'off',
 
     // https://vuejs.github.io/eslint-plugin-vue/rules/this-in-template.html
-    'vue/this-in-template': ['error', 'never'],
+    'vue/this-in-template': ['warn', 'never'],
+
+    'vue/require-default-prop': 'off',
+
+    'vue/require-prop-types': 'off',
   },
 }

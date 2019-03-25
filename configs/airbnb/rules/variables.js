@@ -10,14 +10,7 @@ module.exports = {
     'no-shadow': 'off',
 
     // allow unused vars
-    'no-unused-vars': [
-      'warn',
-      {
-        vars: 'all',
-        args: 'after-used',
-        ignoreRestSiblings: true,
-      },
-    ],
+    'no-unused-vars': 'off',
 
     // allow functions & classes use before define
     'no-use-before-define': [

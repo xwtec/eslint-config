@@ -24,13 +24,7 @@ module.exports = {
     // limits the number of parameters that can be used in the function declaration.
     'max-params': ['warn', 5],
 
-    // allow plusplus in loop
-    'no-plusplus': [
-      'warn',
-      {
-        allowForLoopAfterthoughts: true,
-      },
-    ],
+    'no-plusplus': 'off',
 
     // disallow dangling underscores in identifiers
     // warn
