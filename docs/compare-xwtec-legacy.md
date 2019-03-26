@@ -78,6 +78,7 @@
 | [no-eval](https://eslint.org/docs/rules/no-eval)                                                   | error |    error     |
 | [no-ex-assign](https://eslint.org/docs/rules/no-ex-assign)                                         | warn  |     warn     |
 | [no-extend-native](https://eslint.org/docs/rules/no-extend-native)                                 | warn  |     warn     |
+| [no-extra-bind](https://eslint.org/docs/rules/no-extra-bind)                                       | warn  |     warn     |
 | [no-extra-boolean-cast](https://eslint.org/docs/rules/no-extra-boolean-cast)                       | warn  |     warn     |
 | [no-extra-label](https://eslint.org/docs/rules/no-extra-label)                                     | warn  |     warn     |
 | [no-extra-parens](https://eslint.org/docs/rules/no-extra-parens)                                   |  off  |     off      |

@@ -40,6 +40,7 @@
 | warn | [no-empty-character-class](https://eslint.org/docs/rules/no-empty-character-class)         | disallow empty character classes in regular expressions                               |
 | warn | [no-ex-assign](https://eslint.org/docs/rules/no-ex-assign)                                 | disallow reassigning exceptions in `catch` clauses                                    |
 | warn | [no-extend-native](https://eslint.org/docs/rules/no-extend-native)                         | disallow extending native types                                                       |
+| warn | [no-extra-bind](https://eslint.org/docs/rules/no-extra-bind)                               | disallow unnecessary calls to `.bind()`                                               |
 | warn | [no-extra-boolean-cast](https://eslint.org/docs/rules/no-extra-boolean-cast)               | disallow unnecessary boolean casts                                                    |
 | warn | [no-extra-label](https://eslint.org/docs/rules/no-extra-label)                             | disallow unnecessary labels                                                           |
 | warn | [no-fallthrough](https://eslint.org/docs/rules/no-fallthrough)                             | disallow fallthrough of `case` statements                                             |

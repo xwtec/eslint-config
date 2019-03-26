@@ -31,6 +31,9 @@ module.exports = {
     // disallow adding to native types
     'no-extend-native': 'warn',
 
+    // disallow unnecessary function binding
+    'no-extra-bind': 'warn',
+
     // disallow Unnecessary Labels
     // https://eslint.org/docs/rules/no-extra-label
     'no-extra-label': 'warn',

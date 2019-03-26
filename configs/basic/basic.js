@@ -4,8 +4,11 @@ module.exports = {
     './best-practices.js',
     './variables.js',
     './es6.js',
+    './style.js',
   ].map(require.resolve),
   env: {
+    node: true,
+    browser: true,
     es6: true,
   },
   parserOptions: {

@@ -1,10 +1,14 @@
 module.exports = {
-  extends: ['./errors.js', './best-practices.js', './variables.js'].map(
-    require.resolve
-  ),
+  extends: [
+    './errors.js',
+    './best-practices.js',
+    './variables.js',
+    './style.js',
+  ].map(require.resolve),
   env: {
-    es6: false,
-    node: false,
+    node: true,
+    browser: true,
+    es6: true,
   },
   parserOptions: {
     ecmaVersion: 5,
