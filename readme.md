@@ -62,22 +62,12 @@ module.exports = {
 - [default rules included](https://github.com/xwtec/eslint-config/blob/master/docs/rules-default.md)
 - [extra vue rules](https://github.com/xwtec/eslint-config/blob/master/docs/rules-vue.md)
 
-## Usage
-
-global install
+## Quick Start
 
 ```sh
 npm install --global eslint prettier @xwtec/eslint-config eslint-plugin-prettier
 echo {"extends":"@xwtec"}>.eslintrc
 eslint **/*.js --fix
-```
-
-in project
-
-```sh
-yarn add --dev eslint prettier @xwtec/eslint-config
-echo {"extends":"@xwtec"}>.eslintrc
-npx eslint **/*.js --fix
 ```
 
 ## Foreign Config
