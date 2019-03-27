@@ -11,7 +11,7 @@ module.exports = {
     './configs/vue/vue.js',
 
     // prettier
-    './configs/prettier/prettier-vue.js',
+    './configs/prettier/prettier.js',
 
     // basic rules
     './configs/basic/basic.js',

@@ -18,7 +18,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^5.2.2"
   },

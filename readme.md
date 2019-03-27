@@ -67,7 +67,7 @@ module.exports = {
 global install
 
 ```sh
-npm install --global eslint prettier @xwtec/eslint-config eslint-config-prettier eslint-plugin-prettier
+npm install --global eslint prettier @xwtec/eslint-config eslint-plugin-prettier
 echo {"extends":"@xwtec"}>.eslintrc
 eslint **/*.js --fix
 ```
@@ -84,9 +84,7 @@ npx eslint **/*.js --fix
 
 > this config is based on `prettier` and `vue`, with very small set of possible errors
 
-- [compare `xwtec` with `prettier`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-xwtec-prettier.md)
 - [compare `xwtec/vue` with `vue`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-vue-vue.md)
-- [compare `xwtec/vue` with `vue/strongly-recommended` + `prettier` + `prettier/vue`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-vue-vue-prettier.md)
 
 ## Links
 

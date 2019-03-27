@@ -10,11 +10,8 @@ const configs = {
   xwtec: require('./configs/xwtec-default').default,
   'xwtec/legacy': require('./configs/xwtec-legacy').default,
   'xwtec/vue': require('./configs/xwtec-vue').default,
-  // plugins
-  prettier: require('./configs/prettier').default,
   // vue
   vue: require('./configs/vue').default,
-  'vue+prettier': require('./configs/vue-prettier').default,
 }
 
 const compares = [
@@ -26,23 +23,6 @@ const compares = [
     file: 'compare-vue-vue',
     local: configs['xwtec/vue'],
     foreign: configs.vue,
-  },
-  {
-    filter({prefix, id}, localRules, foreignRules) {
-      return prefix === 'vue' && has(foreignRules, id)
-    },
-    file: 'compare-vue-vue-prettier',
-    local: configs['xwtec/vue'],
-    foreign: configs['vue+prettier'],
-  },
-  // plugins
-  {
-    filter({id}, localRules, foreignRules) {
-      return has(foreignRules, id)
-    },
-    file: 'compare-xwtec-prettier',
-    local: configs.xwtec,
-    foreign: configs.prettier,
   },
   // default
   {
