@@ -49,7 +49,7 @@ module.exports = {
 
 <!-- AUTO GENERATED CONTENT, DON'T EDIT -->
 
-<details><summary>Error</summary>
+### Error
 
 |  #  | Type  | Rule                                                                             | Description                                                                         |
 | :-: | :---: | :------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
@@ -76,9 +76,7 @@ module.exports = {
 | 21  | error | [require-yield](https://eslint.org/docs/rules/require-yield)                     | require generator functions to contain `yield`                                      |
 | 22  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
 
-</details>
-
-<details><summary>Warn</summary>
+### Warn
 
 |  #  | Type | Rule                                                                                       | Description                                                                           |
 | :-: | :--: | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
@@ -124,8 +122,6 @@ module.exports = {
 | 40  | warn | [radix](https://eslint.org/docs/rules/radix)                                               | enforce the consistent use of the radix argument when using `parseInt()`              |
 | 41  | warn | [valid-typeof](https://eslint.org/docs/rules/valid-typeof)                                 | enforce comparing `typeof` expressions against valid strings                          |
 | 42  | warn | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options)            |
-
-</details>
 
 <!-- rules end -->
 
