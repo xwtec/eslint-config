@@ -32,7 +32,7 @@ npm install --save-dev eslint prettier @xwtec/eslint-config
 ```js
 module.exports = {
   root: true,
-  extends: ["@xwtec"],
+  extends: ['@xwtec'],
 }
 ```
 
@@ -43,7 +43,7 @@ module.exports = {
 ```js
 module.exports = {
   root: true,
-  extends: ["@xwtec/eslint-config/legacy"],
+  extends: ['@xwtec/eslint-config/legacy'],
 }
 ```
 
@@ -55,7 +55,7 @@ module.exports = {
 ```js
 module.exports = {
   root: true,
-  extends: ["@xwtec/eslint-config/vue"],
+  extends: ['@xwtec/eslint-config/vue'],
 }
 ```
 
@@ -64,7 +64,21 @@ module.exports = {
 
 ## Usage
 
+global install
+
 ```sh
+npm install --global eslint prettier @xwtec/eslint-config eslint-config-prettier eslint-plugin-prettier
+echo {}>.prettierrc
+echo {"extends":"@xwtec"}>.eslintrc
+eslint **/*.js
+```
+
+in project
+
+```sh
+yarn add --dev eslint prettier @xwtec/eslint-config
+echo {}>.prettierrc
+echo {"extends":"@xwtec"}>.eslintrc
 npx eslint **/*.js
 ```
 
