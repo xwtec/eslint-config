@@ -1,8 +1,53 @@
-# rules
+# @xwtec/eslint-config
 
-> default rules
+[![devDependencies](https://img.shields.io/david/dev/xwtec/eslint-config.svg?style=flat-square)](https://david-dm.org/xwtec/eslint-config)
+[![Issues](http://img.shields.io/github/issues/xwtec/eslint-config.svg?style=flat-square)](https://github.com/xwtec/eslint-config/issues)
+[![Issues](https://img.shields.io/github/issues-pr/xwtec/eslint-config.svg?style=flat-square)](https://github.com/xwtec/eslint-config/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/xwtec/eslint-config.svg?style=flat-square)](https://github.com/xwtec/eslint-config/commits)
+[![GitHub Release Date](https://img.shields.io/github/release-date/xwtec/eslint-config.svg?style=flat-square)](https://github.com/xwtec/eslint-config/releases)
 
-## error
+[![npm](https://img.shields.io/npm/v/@xwtec/eslint-config.svg?style=flat-square)](https://www.npmjs.com/package/@xwtec/eslint-config)
+[![npm](https://img.shields.io/npm/dt/@xwtec/eslint-config.svg?style=flat-square)](https://www.npmjs.com/package/@xwtec/eslint-config)
+[![Snyk Vulnerabilities for npm package version](https://img.shields.io/snyk/vulnerabilities/npm/@xwtec/eslint-config.svg?style=flat-square)](https://snyk.io/vuln/npm:@xwtec%2Feslint-config)
+
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![MIT license](https://img.shields.io/github/license/xwtec/eslint-config.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+
+> ESLint Configuration for xwtec projects
+
+## Quick Start
+
+```sh
+npm install --global eslint prettier @xwtec/eslint-config eslint-plugin-prettier
+echo {"extends":"@xwtec"}>.eslintrc
+eslint **/*.js --fix
+```
+
+## Install
+
+```sh
+# with yarn
+yarn add --dev eslint prettier @xwtec/eslint-config
+
+# with npm
+npm install --save-dev eslint prettier @xwtec/eslint-config
+```
+
+## Configuration
+
+`.eslintrc.js` formart is recommanded
+
+```js
+module.exports = {
+  extends: ['@xwtec'],
+}
+```
+
+<!-- rules start -->
+
+<!-- AUTO GENERATED CONTENT, DON'T EDIT -->
+
+<details open><summary>Error</summary>
 
 |  #  | Type  | Rule                                                                             | Description                                                                         |
 | :-: | :---: | :------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
@@ -29,7 +74,9 @@
 | 21  | error | [require-yield](https://eslint.org/docs/rules/require-yield)                     | require generator functions to contain `yield`                                      |
 | 22  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
 
-## warn
+</details>
+
+<details><summary>Warn</summary>
 
 |  #  | Type | Rule                                                                                       | Description                                                                           |
 | :-: | :--: | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
@@ -75,3 +122,21 @@
 | 40  | warn | [radix](https://eslint.org/docs/rules/radix)                                               | enforce the consistent use of the radix argument when using `parseInt()`              |
 | 41  | warn | [valid-typeof](https://eslint.org/docs/rules/valid-typeof)                                 | enforce comparing `typeof` expressions against valid strings                          |
 | 42  | warn | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options)            |
+
+</details>
+
+<!-- rules end -->
+
+## Relative
+
+- [@xwtec/eslint-config-legacy](https://github.com/fisker/eslint-config-legacy)
+- [@xwtec/eslint-config-vue](https://github.com/fisker/eslint-config-vue)
+
+## Links
+
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+
+## License
+
+MIT © [xwtec](https://github.com/xwtec)
