@@ -131,8 +131,8 @@ module.exports = {
 
 ## Relative
 
-- [@xwtec/eslint-config-legacy](https://github.com/fisker/eslint-config-legacy)
-- [@xwtec/eslint-config-vue](https://github.com/fisker/eslint-config-vue)
+- [@xwtec/eslint-config-legacy](https://github.com/xwtec/eslint-config-legacy)
+- [@xwtec/eslint-config-vue](https://github.com/xwtec/eslint-config-vue)
 
 ## Links
 
