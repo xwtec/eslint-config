@@ -4,7 +4,7 @@
   "description": "ESLint Configuration for xwtec projects",
   "main": "index.js",
   "keywords": ["xwtec", "eslint", "config"],
-  "files": ["index.js", "legacy.js", "vue.js", "configs/"],
+  "files": ["index.js", "configs/"],
   "scripts": {
     "release": "np --no-yarn --no-cleanup",
     "test": "echo passed.",
