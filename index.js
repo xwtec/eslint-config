@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   extends: [
     // prettier
     './configs/prettier/prettier.js',

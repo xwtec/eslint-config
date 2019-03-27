@@ -15,6 +15,14 @@
 
 > ESLint Configuration for xwtec projects
 
+## Quick Start
+
+```sh
+npm install --global eslint prettier @xwtec/eslint-config eslint-plugin-prettier
+echo {"extends":"@xwtec"}>.eslintrc
+eslint **/*.js --fix
+```
+
 ## Install
 
 ```sh
@@ -25,24 +33,24 @@ yarn add --dev eslint prettier @xwtec/eslint-config
 npm install --save-dev eslint prettier @xwtec/eslint-config
 ```
 
-## .eslintrc.js
+## Configuration
 
-### default
+`.eslintrc.js` formart is recommanded
+
+### default rules
 
 ```js
 module.exports = {
-  root: true,
   extends: ['@xwtec'],
 }
 ```
 
 - [rules](https://github.com/xwtec/eslint-config/blob/master/docs/rules-default.md)
 
-### es5
+### for es5 project
 
 ```js
 module.exports = {
-  root: true,
   extends: ['@xwtec/eslint-config/legacy'],
 }
 ```
@@ -50,42 +58,23 @@ module.exports = {
 - [rules](https://github.com/xwtec/eslint-config/blob/master/docs/rules-legacy.md)
 - [difference from default](https://github.com/xwtec/eslint-config/blob/master/docs/compare-xwtec-legacy.md)
 
-### vue
+### for vue project
 
 ```js
 module.exports = {
-  root: true,
   extends: ['@xwtec/eslint-config/vue'],
 }
 ```
 
 - [default rules included](https://github.com/xwtec/eslint-config/blob/master/docs/rules-default.md)
 - [extra vue rules](https://github.com/xwtec/eslint-config/blob/master/docs/rules-vue.md)
-
-## Quick Start
-
-```sh
-npm install --global eslint prettier @xwtec/eslint-config eslint-plugin-prettier
-echo {"extends":"@xwtec"}>.eslintrc
-eslint **/*.js --fix
-```
-
-## Foreign Config
-
-> this config is based on `prettier` and `vue`, with very small set of possible errors
-
 - [compare `xwtec/vue` with `vue`](https://github.com/xwtec/eslint-config/tree/master/docs/compare-vue-vue.md)
 
 ## Links
 
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
-
-## Changelog
-
-[changelog.md](https://github.com/xwtec/eslint-config/blob/master/changelog.md)
 
 ## License
 

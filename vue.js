@@ -6,6 +6,7 @@
  */
 
 module.exports = {
+  root: true,
   extends: [
     // vue
     './configs/vue/vue.js',
