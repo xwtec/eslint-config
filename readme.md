@@ -69,7 +69,7 @@ global install
 ```sh
 npm install --global eslint prettier @xwtec/eslint-config eslint-config-prettier eslint-plugin-prettier
 echo {"extends":"@xwtec"}>.eslintrc
-eslint **/*.js
+eslint **/*.js --fix
 ```
 
 in project
@@ -77,7 +77,7 @@ in project
 ```sh
 yarn add --dev eslint prettier @xwtec/eslint-config
 echo {"extends":"@xwtec"}>.eslintrc
-npx eslint **/*.js
+npx eslint **/*.js --fix
 ```
 
 ## Foreign Config
