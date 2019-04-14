@@ -138,4 +138,4 @@ module.exports = {
     // require use of the second argument for parseInt()
     radix: 'warn',
   },
-}
+};

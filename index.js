@@ -24,4 +24,4 @@ module.exports = {
     // prettier
     './configs/prettier.js',
   ].map(require.resolve),
-}
+};

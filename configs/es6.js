@@ -33,4 +33,4 @@ module.exports = {
     // https://eslint.org/docs/rules/require-yield
     'require-yield': 'error',
   },
-}
+};

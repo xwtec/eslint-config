@@ -92,4 +92,4 @@ module.exports = {
     // https://eslint.org/docs/rules/valid-typeof
     'valid-typeof': 'warn',
   },
-}
+};

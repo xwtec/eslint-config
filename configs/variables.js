@@ -13,4 +13,4 @@ module.exports = {
     // disallow use of undeclared variables unless mentioned in a /*global */ block
     'no-undef': 'error',
   },
-}
+};
