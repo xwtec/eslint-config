@@ -15,7 +15,7 @@
   "scripts": {
     "release": "run-s lint build test prettier dist",
     "dist": "run-p dist:*",
-    "dist:npm": "np --no-yarn --no-cleanup",
+    "dist:npm": "np --yolo --no-yarn",
     "test": "eslint **/*.js --config ./index.js",
     "prettier": "prettier **/*.{js,md,json} --write",
     "lint": "run-p lint:*",
@@ -29,7 +29,8 @@
     "eslint-plugin-prettier": "^3.1.0"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -69,5 +70,6 @@
     "name": "xwtec",
     "url": "https://github.com/xwtec"
   },
-  "prettier": "@xwtec/prettier-config"
+  "prettier": "@xwtec/prettier-config",
+  "sideEffects": false
 }
