@@ -1,7 +1,7 @@
 import {CLIEngine} from 'eslint';
 import mem from 'mem';
 
-import ruleDocs from './rule-docs';
+import ruleMeta from './rule-meta';
 import ruleValue from './rule-value';
 
 function getRules(config) {
@@ -15,13 +15,11 @@ function getRules(config) {
 
   for (const ruleId of Object.keys(rules)) {
     const value = ruleValue(rules[ruleId]);
-    const docs = ruleDocs(ruleId, defs);
-    const {url: link} = docs;
+    const meta = ruleMeta(ruleId, defs);
 
     rules[ruleId] = {
       value,
-      link,
-      docs,
+      meta,
     };
   }
   return rules;

@@ -14,6 +14,9 @@ module.exports = {
     },
   },
   extends: [
+    // fixable
+    './configs/fixable.js',
+
     // builtin
     './configs/errors.js',
     './configs/best-practices.js',
@@ -22,6 +25,7 @@ module.exports = {
     './configs/style.js',
 
     // prettier
+    'eslint-config-prettier',
     './configs/prettier.js',
   ].map(require.resolve),
 };

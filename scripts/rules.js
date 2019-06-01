@@ -13,13 +13,16 @@ const data = Object.keys(rules)
   .map(ruleId => ({
     ...parseRuleId(ruleId),
     ...rules[ruleId],
-  }));
+  }))
+  .filter(({value}) => value !== 'off');
 
 const RULE_START_MARK = '<!-- rules start -->';
 const RULE_END_MARK = '<!-- rules end -->';
 
-const warnData = data.filter(({value}) => value === 'warn');
-const errorData = data.filter(({value}) => value === 'error');
+const fixable = data.filter(({meta: {fixable}}) => Boolean(fixable));
+const noneFixable = data.filter(({meta: {fixable}}) => !fixable);
+const warnData = noneFixable.filter(({value}) => value === 'warn');
+const errorData = noneFixable.filter(({value}) => value === 'error');
 
 const content = [
   RULE_START_MARK,
@@ -28,6 +31,8 @@ const content = [
   printer(errorData),
   '### Warn',
   printer(warnData),
+  '### Fixable',
+  printer(fixable),
   RULE_END_MARK,
 ].join('\n\n');
 

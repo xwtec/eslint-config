@@ -3,9 +3,12 @@ const mem = require('mem');
 function getRuleDocs(ruleId, defs) {
   const def = defs.get(ruleId) || {};
   const {meta = {}} = def;
-  const {docs = {}} = meta;
+  const {fixable = false, docs = {}} = meta;
 
-  return docs;
+  return {
+    fixable,
+    docs,
+  };
 }
 
 export default mem(getRuleDocs, {cacheKey: ruleId => ruleId});
