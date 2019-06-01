@@ -128,17 +128,19 @@ module.exports = {
     ],
     'one-var': ['warn', 'never'],
 
+    // require or disallow a space immediately following the // or /* in a comment
+    // https://eslint.org/docs/rules/spaced-comment
     'spaced-comment': [
       'warn',
       'always',
       {
         line: {
-          markers: ['/'],
           exceptions: ['-', '+'],
+          markers: ['=', '!', '/'], // space here to support sprockets directives
         },
         block: {
-          markers: ['!'],
-          exceptions: ['*'],
+          exceptions: ['-', '+'],
+          markers: ['=', '!'], // space here to support sprockets directives
           balanced: true,
         },
       },
