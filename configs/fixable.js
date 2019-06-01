@@ -126,7 +126,6 @@ module.exports = {
         enforceForRenamedProperties: false,
       },
     ],
+    'on-var': ['warn', 'never'],
   },
-
-  'on-var': ['warn', 'never'],
 };
