@@ -89,7 +89,7 @@ const ruleIDs = [
   'no-useless-rename',
   'no-var',
   'object-shorthand',
-  'prefer-arrow-callback',
+  // 'prefer-arrow-callback',
   'prefer-const',
   'prefer-destructuring',
   'prefer-numeric-literals',
@@ -143,6 +143,15 @@ module.exports = {
           markers: ['=', '!'], // space here to support sprockets directives
           balanced: true,
         },
+      },
+    ],
+
+    // suggest using of const declaration for variables that are never modified after declared
+    'prefer-const': [
+      'warn',
+      {
+        destructuring: 'any',
+        ignoreReadBeforeAssign: true,
       },
     ],
   },
