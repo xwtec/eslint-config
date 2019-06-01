@@ -80,24 +80,6 @@ const ruleIDs = [
   'template-tag-spacing',
   'unicode-bom',
   'wrap-regex',
-  'arrow-body-style',
-  'arrow-parens',
-  'arrow-spacing',
-  'generator-star-spacing',
-  'no-confusing-arrow',
-  'no-useless-computed-key',
-  'no-useless-rename',
-  'no-var',
-  'object-shorthand',
-  // 'prefer-arrow-callback',
-  'prefer-const',
-  'prefer-destructuring',
-  'prefer-numeric-literals',
-  'prefer-template',
-  'rest-spread-spacing',
-  // 'sort-imports',
-  'template-curly-spacing',
-  'yield-star-spacing',
 ];
 
 const rules = Object.fromEntries
@@ -110,22 +92,6 @@ const rules = Object.fromEntries
 module.exports = {
   rules: {
     ...rules,
-    'prefer-destructuring': [
-      'warn',
-      {
-        VariableDeclarator: {
-          array: false,
-          object: true,
-        },
-        AssignmentExpression: {
-          array: false,
-          object: false,
-        },
-      },
-      {
-        enforceForRenamedProperties: false,
-      },
-    ],
     'one-var': ['warn', 'never'],
 
     // require or disallow a space immediately following the // or /* in a comment
@@ -143,15 +109,6 @@ module.exports = {
           markers: ['=', '!'], // space here to support sprockets directives
           balanced: true,
         },
-      },
-    ],
-
-    // suggest using of const declaration for variables that are never modified after declared
-    'prefer-const': [
-      'warn',
-      {
-        destructuring: 'any',
-        ignoreReadBeforeAssign: true,
       },
     ],
   },

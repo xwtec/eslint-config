@@ -16,6 +16,7 @@ module.exports = {
   extends: [
     // fixable
     './configs/fixable.js',
+    './configs/fixable.es6.js',
 
     // builtin
     './configs/errors.js',
