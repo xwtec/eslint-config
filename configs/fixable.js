@@ -127,5 +127,21 @@ module.exports = {
       },
     ],
     'one-var': ['warn', 'never'],
+
+    'spaced-comment': [
+      'warn',
+      'always',
+      {
+        line: {
+          markers: ['/'],
+          exceptions: ['-', '+'],
+        },
+        block: {
+          markers: ['!'],
+          exceptions: ['*'],
+          balanced: true,
+        },
+      },
+    ],
   },
 };
