@@ -193,11 +193,12 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@xwtec/eslint-config@^5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-5.0.5.tgz#5edfec90641b3985e93d3c43967024f7b6344c60"
-  integrity sha512-h0L3LQQp9DwJ6jfTFTnaPnx8HoAz4joEdt3GpQ2mqoATIMjcMwW3XjYQoqaRKcQY6Aw5NvB/NmBeTcXpWwpNfQ==
+"@xwtec/eslint-config@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-6.0.6.tgz#93f75e488521cdb2479821822faf3e4e954ebecb"
+  integrity sha512-bOQCcqdQXLhbDIQq8cijfgsZgkW4Ue+nX65yY3Qlzr3WirOyoYy8fjAXc7K5xg7inRX6J2DbCgPxcgQ+zXesqg==
   dependencies:
+    eslint-config-prettier "^4.3.0"
     eslint-plugin-prettier "^3.1.0"
 
 "@xwtec/prettier-config@^1.0.2":
