@@ -16,13 +16,13 @@ module.exports = {
   extends: [
     // fixable
     './configs/fixable.js',
-    './configs/fixable.es6.js',
+    './configs/fixable.es.js',
 
     // builtin
     './configs/errors.js',
     './configs/best-practices.js',
     './configs/variables.js',
-    './configs/es6.js',
+    './configs/es.js',
     './configs/style.js',
 
     // prettier

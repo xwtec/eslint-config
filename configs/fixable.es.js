@@ -2,6 +2,12 @@
 // ALL RULES [...$$('td > [title=fixable]')].map(d => d.parentNode.nextElementSibling.querySelector('a').getAttribute('href'))
 
 const ruleIDs = [
+  // Stylistic Issues
+  'implicit-arrow-linebreak',
+  'jsx-quotes',
+  'prefer-object-spread',
+
+  // ECMAScript 6
   'arrow-body-style',
   'arrow-parens',
   'arrow-spacing',

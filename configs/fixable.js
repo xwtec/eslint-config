@@ -2,11 +2,14 @@
 // ALL RULES [...$$('td > [title=fixable]')].map(d => d.parentNode.nextElementSibling.querySelector('a').getAttribute('href'))
 
 const ruleIDs = [
+  // Possible Errors
   'no-extra-boolean-cast',
   'no-extra-parens',
   'no-extra-semi',
   'no-regex-spaces',
   'no-unsafe-negation',
+
+  // Best Practices
   'curly',
   'dot-location',
   'dot-notation',
@@ -22,8 +25,14 @@ const ruleIDs = [
   'no-useless-return',
   'wrap-iife',
   'yoda',
+
+  // Strict Mode
   // 'strict',
+
+  // Variables
   'no-undef-init',
+
+  // Stylistic Issues ()
   'array-bracket-newline',
   'array-bracket-spacing',
   'array-element-newline',
@@ -37,9 +46,7 @@ const ruleIDs = [
   'eol-last',
   'func-call-spacing',
   'function-paren-newline',
-  'implicit-arrow-linebreak',
   'indent',
-  'jsx-quotes',
   'key-spacing',
   'keyword-spacing',
   'linebreak-style',
@@ -63,7 +70,6 @@ const ruleIDs = [
   'operator-linebreak',
   'padded-blocks',
   // 'padding-line-between-statements',
-  'prefer-object-spread',
   'quote-props',
   'quotes',
   'semi',
