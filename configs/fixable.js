@@ -107,23 +107,26 @@ const rules = Object.fromEntries
       return rules;
     }, {});
 
-rules['prefer-destructuring'] = [
-  'warn',
-  {
-    VariableDeclarator: {
-      array: false,
-      object: true,
-    },
-    AssignmentExpression: {
-      array: false,
-      object: false,
-    },
-  },
-  {
-    enforceForRenamedProperties: false,
-  },
-];
-
 module.exports = {
-  rules,
+  rules: {
+    ...rules,
+    'prefer-destructuring': [
+      'warn',
+      {
+        VariableDeclarator: {
+          array: false,
+          object: true,
+        },
+        AssignmentExpression: {
+          array: false,
+          object: false,
+        },
+      },
+      {
+        enforceForRenamedProperties: false,
+      },
+    ],
+  },
+
+  'on-var': ['warn', 'never'],
 };
