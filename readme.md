@@ -35,7 +35,7 @@ npm install --save-dev eslint prettier @xwtec/eslint-config
 
 ## Configuration
 
-`.eslintrc.js` formart is recommanded
+`.eslintrc.js` format is recommended
 
 ```js
 module.exports = {
