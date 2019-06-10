@@ -20,7 +20,7 @@
 ```sh
 npm install --global eslint prettier @xwtec/eslint-config eslint-plugin-prettier
 echo {"extends":"@xwtec"}>.eslintrc
-eslint **/*.js --fix
+eslint **/*.js
 ```
 
 ## Install
