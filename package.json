@@ -13,14 +13,17 @@
     "configs/"
   ],
   "scripts": {
-    "release": "run-s lint build test prettier dist",
+    "release": "run-s lint build test format dist",
     "dist": "run-p dist:*",
     "dist:npm": "np --yolo --no-yarn",
     "test": "eslint **/*.js --config ./index.js",
-    "prettier": "prettier **/*.{js,md,json} --write",
     "lint": "run-p lint:*",
-    "lint:eslint": "eslint **/*.{js,mjs,vue} --fix",
+    "lint:eslint": "eslint **/*.{js,mjs,vue}",
     "lint:markdown": "markdownlint **/*.md --ignore \"**/node_modules/**\"",
+    "lint:prettier": "prettier **/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml} --check",
+    "format": "run-p format:*",
+    "format:eslint": "yarn lint:eslint --fix",
+    "format:prettier": "prettier **/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml} --write",
     "build": "npm-run-all build:*",
     "build:rules": "node -r esm ./scripts/rules"
   },
