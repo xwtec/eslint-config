@@ -25,7 +25,7 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@commitlint/cli@^8.0.0":
+"@commitlint/cli@8.0.0":
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-8.0.0.tgz#1be7aa14fecbcf71317a8187fbb5210760d4ca61"
   integrity sha512-wFu+g9v73I2rMRTv27ItIbcrhWqge0ZpUNUIJ9fw8TF7XpmhaUFvGqa2kU6st1F0TyEOrq5ZMzwI8kQZNVLuXg==
@@ -155,22 +155,22 @@
   dependencies:
     find-up "^2.1.0"
 
-"@fisker/commitlint-config@^1.1.0":
+"@fisker/commitlint-config@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@fisker/commitlint-config/-/commitlint-config-1.1.0.tgz#e58fd2a66282f9bef3ba258a8f11442a89b11cd5"
   integrity sha512-X1A7wde0cbvsFesjfjEJ4sSFtKOZLlGEqnGPDcaEfxzlg1nNMfG5f+iJPCuynDCY8gpRz13quYkHUmR2nCB2TQ==
   dependencies:
     "@commitlint/config-conventional" "8.0.0"
 
-"@fisker/husky-config@^1.1.0":
+"@fisker/husky-config@1.1.0":
   version "1.1.0"
-  resolved "https://registry.npm.taobao.org/@fisker/husky-config/download/@fisker/husky-config-1.1.0.tgz#6edc5a2bf43a53ed7002d6eb3c0d14bc8c06ca69"
-  integrity sha1-btxaK/Q6U+1wAtbrPA0UvIwGymk=
+  resolved "https://registry.yarnpkg.com/@fisker/husky-config/-/husky-config-1.1.0.tgz#6edc5a2bf43a53ed7002d6eb3c0d14bc8c06ca69"
+  integrity sha512-znJ4sTCPAk3p8zvhAVSnax5mBAzk3FVb0SK30TUKHKYU7fOdqTMOB8PIH4bu4GskinX6GOwBiueXe9/SmCVMGQ==
 
-"@fisker/lint-staged-config@^1.0.4":
+"@fisker/lint-staged-config@1.0.4":
   version "1.0.4"
-  resolved "https://registry.npm.taobao.org/@fisker/lint-staged-config/download/@fisker/lint-staged-config-1.0.4.tgz#08206dd7ce02fccce83939fcf21ba2b774b5be36"
-  integrity sha1-CCBt184C/MzoOTn88huit3S1vjY=
+  resolved "https://registry.yarnpkg.com/@fisker/lint-staged-config/-/lint-staged-config-1.0.4.tgz#08206dd7ce02fccce83939fcf21ba2b774b5be36"
+  integrity sha512-hzNU3DPo8SKCWKN4ew/6GZugxl2qihN6jOjQv3yvtOE1u+W2rXS8Wxjdoh4Nia4ggdEIqkNkWcGr8KzjzpFhEA==
 
 "@marionebl/sander@^0.6.0":
   version "0.6.1"
@@ -193,7 +193,7 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@xwtec/eslint-config@^6.0.11":
+"@xwtec/eslint-config@6.0.11":
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-6.0.11.tgz#0415efaeec11a11846d6ad0d95fca85ffd8a7e53"
   integrity sha512-kMVakR9zpIEZ9aSm7J1ciWNCRigMEoMbnNCgK7KXnHtm6IspSDdPayu9ZUlcN4Wxk8nbs/2rXHk4AJi9WHTN1g==
@@ -201,7 +201,7 @@
     eslint-config-prettier "5.0.0"
     eslint-plugin-prettier "3.1.0"
 
-"@xwtec/prettier-config@^1.0.2":
+"@xwtec/prettier-config@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@xwtec/prettier-config/-/prettier-config-1.0.2.tgz#25016177c42540094c65b2d4e98e0c2fcb670d7e"
   integrity sha512-kSCvfkH6dXLmQoSbNZfjQiCwF9nbtAd2UZSL0/0KMuhZfxKLL0U1Y7IzV169QTNdYGTEavDBAFzXRI+VEQjhbQ==
@@ -660,7 +660,7 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-cz-conventional-changelog-emoji@^0.1.0:
+cz-conventional-changelog-emoji@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/cz-conventional-changelog-emoji/-/cz-conventional-changelog-emoji-0.1.0.tgz#8eadd1798b8e3e1bd1568de8577107988c97efff"
   integrity sha1-jq3ReYuOPhvRVo3oV3EHmIyX7/8=
@@ -892,10 +892,10 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
 
-eslint@^6.0.1:
+eslint@6.0.1:
   version "6.0.1"
-  resolved "https://registry.npm.taobao.org/eslint/download/eslint-6.0.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint%2Fdownload%2Feslint-6.0.1.tgz#4a32181d72cb999d6f54151df7d337131f81cda7"
-  integrity sha1-SjIYHXLLmZ1vVBUd99M3Ex+Bzac=
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.0.1.tgz#4a32181d72cb999d6f54151df7d337131f81cda7"
+  integrity sha512-DyQRaMmORQ+JsWShYsSg4OPTjY56u1nCjAmICrE8vLWqyLKxhFXOthwMj1SA8xwfrv0CofLNVnqbfyhwCkaO0w==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -934,7 +934,7 @@ eslint@^6.0.1:
     table "^5.2.3"
     text-table "^0.2.0"
 
-esm@^3.2.25:
+esm@3.2.25:
   version "3.2.25"
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
   integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
@@ -1318,15 +1318,16 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
   integrity sha512-7T/BxH19zbcCTa8XkMlbK5lTo1WtgkFi3GvdWEyNuc4Vex7/9Dqbnpsf4JMydcfj9HCg4zUWFTL3Za6lapg5/w==
 
-husky@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-2.5.0.tgz#fe9839e118e5d88e3f1d7121d52564745615815e"
-  integrity sha512-/aQIBaVMuzGi5X5BPliDPbHE+G+HDpWV7Zu28DiiXFMvHQcOeTsEnODWIGKyGBp7GM7rOgkxQdF+6AEo6xNtkw==
+husky@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-2.6.0.tgz#0f7ad7ad2662909ca89e2978efa86584873bc7bd"
+  integrity sha512-AbBod6i0qmaPv/fb9XjOR+m/cJ6MKToLpJh+pYV8Pl7VKvOWvCXpjQK1MkFC4XLoxGX6mqBFfA/H5ugxUd9nLg==
   dependencies:
     cosmiconfig "^5.2.1"
     execa "^1.0.0"
     get-stdin "^7.0.0"
     is-ci "^2.0.0"
+    opencollective-postinstall "^2.0.2"
     pkg-dir "^4.2.0"
     please-upgrade-node "^3.1.1"
     read-pkg "^5.1.1"
@@ -1726,7 +1727,7 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-lint-staged@^8.2.1:
+lint-staged@8.2.1:
   version "8.2.1"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-8.2.1.tgz#752fcf222d9d28f323a3b80f1e668f3654ff221f"
   integrity sha512-n0tDGR/rTCgQNwXnUf/eWIpPNddGWxC32ANTNYsj2k02iZb7Cz5ox2tytwBu+2r0zDXMEMKw7Y9OD/qsav561A==
@@ -1941,7 +1942,7 @@ markdown-it@8.4.2:
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
-markdownlint-cli@^0.17.0:
+markdownlint-cli@0.17.0:
   version "0.17.0"
   resolved "https://registry.yarnpkg.com/markdownlint-cli/-/markdownlint-cli-0.17.0.tgz#f5e483a576bf56cca29b057216241a54d33e4d95"
   integrity sha512-/MInVAuNUDGj5lWeAweL2s4Wk0BY2UqOUcOuOMhY62LXmQZU9qZiFJ5XgHrAZVMggFH/vPupCiUiAMFgGIOqHg==
@@ -1976,7 +1977,7 @@ mdurl@^1.0.1:
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
 
-mem@^5.1.0:
+mem@5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/mem/-/mem-5.1.0.tgz#b94ee9b888d26928dd9d91cab107fa04b925730b"
   integrity sha512-9egM8rCo4wKiKuTwK1nFlSk39HbgluK93EgUmmboF85CVuKp7PoAwK3C8krkJeeFiH/ltExwVxcu+i2dKZYtDw==
@@ -2148,7 +2149,7 @@ npm-path@^2.0.2:
   dependencies:
     which "^1.2.10"
 
-npm-run-all@^4.1.5:
+npm-run-all@4.1.5:
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-4.1.5.tgz#04476202a15ee0e2e214080861bff12a51d98fba"
   integrity sha512-Oo82gJDAVcaMdi3nuoKFavkIHBRVqQ1qvMb+9LHk/cF4P6B2m8aP04hGf7oL6wZ9BuGwX1onlLhpuoofSyoQDQ==
@@ -2230,6 +2231,11 @@ onetime@^2.0.0:
   integrity sha1-BnQoIw/WdEOyeUsiu6UotoZ5YtQ=
   dependencies:
     mimic-fn "^1.0.0"
+
+opencollective-postinstall@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
+  integrity sha512-pVOEP16TrAO2/fjej1IdOyupJY8KDUM1CvsaScRbw6oddvpQoOfGk4ywha0HKKVAD6RkW4x6Q+tNBwhf3Bgpuw==
 
 optionator@^0.8.2:
   version "0.8.2"
@@ -2433,7 +2439,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^1.18.2:
+prettier@1.18.2:
   version "1.18.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
   integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
