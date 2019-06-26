@@ -18,9 +18,9 @@
 ## Quick Start
 
 ```sh
-npm install --global eslint prettier @xwtec/eslint-config eslint-plugin-prettier
-echo {"extends":"@xwtec"}>.eslintrc
-eslint **/*.js
+yarn add eslint prettier @xwtec/eslint-config eslint-plugin-prettier
+echo module.exports = {extends: "@xwtec"};>.eslintrc.jsx
+eslint "**/*.js"
 ```
 
 ## Install
