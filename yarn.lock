@@ -193,10 +193,10 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@xwtec/eslint-config@^6.0.10":
-  version "6.0.10"
-  resolved "https://registry.npm.taobao.org/@xwtec/eslint-config/download/@xwtec/eslint-config-6.0.10.tgz?cache=0&sync_timestamp=1561428009829&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40xwtec%2Feslint-config%2Fdownload%2F%40xwtec%2Feslint-config-6.0.10.tgz#7fd421f137d47d34502d6869258f46239e8ba0c4"
-  integrity sha1-f9Qh8TfUfTRQLWhpJY9GI56LoMQ=
+"@xwtec/eslint-config@^6.0.11":
+  version "6.0.11"
+  resolved "https://registry.yarnpkg.com/@xwtec/eslint-config/-/eslint-config-6.0.11.tgz#0415efaeec11a11846d6ad0d95fca85ffd8a7e53"
+  integrity sha512-kMVakR9zpIEZ9aSm7J1ciWNCRigMEoMbnNCgK7KXnHtm6IspSDdPayu9ZUlcN4Wxk8nbs/2rXHk4AJi9WHTN1g==
   dependencies:
     eslint-config-prettier "5.0.0"
     eslint-plugin-prettier "3.1.0"
