@@ -71,9 +71,8 @@
   },
   "homepage": "https://github.com/xwtec/eslint-config#readme",
   "author": {
-    "name": "fisker Cheung",
-    "email": "lionkay@gmail.com",
-    "url": "https://www.fiskercheung.com/"
+    "name": "xwtec",
+    "url": "https://github.com/xwtec"
   },
   "prettier": "@xwtec/prettier-config",
   "sideEffects": false
