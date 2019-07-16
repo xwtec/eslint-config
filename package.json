@@ -23,7 +23,6 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint \"**/*.{js,mjs,vue}\"",
     "lint:markdown": "markdownlint \"**/*.md\" --ignore \"**/node_modules/**\"",
-    "lint:stylelint": "stylelint \"**/*.{css,scss,less}\"",
     "release": "run-s lint build test format dist",
     "test": "eslint **/*.js --config ./index.js"
   },
