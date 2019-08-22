@@ -1,13 +1,15 @@
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
   env: {
     node: true,
     browser: true,
     es6: true,
   },
   parserOptions: {
-    ecmaVersion: 2019,
+    ecmaVersion: 2020,
     sourceType: 'module',
+    allowImportExportEverywhere: true,
     ecmaFeatures: {
       globalReturn: false,
       jsx: true,
