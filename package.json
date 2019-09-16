@@ -39,7 +39,7 @@
   },
   "repository": "xwtec/eslint-config",
   "devDependencies": {
-    "@commitlint/cli": "8.1.0",
+    "@commitlint/cli": "8.2.0",
     "@fisker/commitlint-config": "1.1.2",
     "@fisker/husky-config": "1.1.2",
     "@fisker/lint-staged-config": "1.0.5",
