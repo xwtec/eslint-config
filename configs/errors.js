@@ -83,7 +83,7 @@ module.exports = {
 
     // disallow negating the left operand of relational operators
     // https://eslint.org/docs/rules/no-unsafe-negation
-    'no-unsafe-negation': 'error',
+    'no-unsafe-negation': 'warn',
 
     // disallow comparisons with the value NaN
     'use-isnan': 'error',
