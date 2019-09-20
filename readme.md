@@ -71,8 +71,9 @@ module.exports = {
 | 16  | error | [no-self-compare](https://eslint.org/docs/rules/no-self-compare)                 | disallow comparisons where both sides are exactly the same                          |
 | 17  | error | [no-sequences](https://eslint.org/docs/rules/no-sequences)                       | disallow comma operators                                                            |
 | 18  | error | [no-undef](https://eslint.org/docs/rules/no-undef)                               | disallow the use of undeclared variables unless mentioned in `/*global */` comments |
-| 19  | error | [require-yield](https://eslint.org/docs/rules/require-yield)                     | require generator functions to contain `yield`                                      |
-| 20  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
+| 19  | error | [no-unsafe-negation](https://eslint.org/docs/rules/no-unsafe-negation)           | disallow negating the left operand of relational operators                          |
+| 20  | error | [require-yield](https://eslint.org/docs/rules/require-yield)                     | require generator functions to contain `yield`                                      |
+| 21  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
 
 ### Warn
 
@@ -128,23 +129,22 @@ module.exports = {
 |  8  | warn  | [no-regex-spaces](https://eslint.org/docs/rules/no-regex-spaces)                 | disallow multiple spaces in regular expressions                                                                        |
 |  9  | warn  | [no-undef-init](https://eslint.org/docs/rules/no-undef-init)                     | disallow initializing variables to `undefined`                                                                         |
 | 10  | warn  | [no-unneeded-ternary](https://eslint.org/docs/rules/no-unneeded-ternary)         | disallow ternary operators when simpler alternatives exist                                                             |
-| 11  | error | [no-unsafe-negation](https://eslint.org/docs/rules/no-unsafe-negation)           | disallow negating the left operand of relational operators                                                             |
-| 12  | warn  | [no-unused-labels](https://eslint.org/docs/rules/no-unused-labels)               | disallow unused labels                                                                                                 |
-| 13  | warn  | [no-useless-computed-key](https://eslint.org/docs/rules/no-useless-computed-key) | disallow unnecessary computed property keys in object literals                                                         |
-| 14  | warn  | [no-useless-rename](https://eslint.org/docs/rules/no-useless-rename)             | disallow renaming import, export, and destructured assignments to the same name                                        |
-| 15  | warn  | [no-useless-return](https://eslint.org/docs/rules/no-useless-return)             | disallow redundant return statements                                                                                   |
-| 16  | warn  | [no-var](https://eslint.org/docs/rules/no-var)                                   | require `let` or `const` instead of `var`                                                                              |
-| 17  | warn  | [object-shorthand](https://eslint.org/docs/rules/object-shorthand)               | require or disallow method and property shorthand syntax for object literals                                           |
-| 18  | warn  | [one-var](https://eslint.org/docs/rules/one-var)                                 | enforce variables to be declared either together or separately in functions                                            |
-| 19  | warn  | [operator-assignment](https://eslint.org/docs/rules/operator-assignment)         | require or disallow assignment operator shorthand where possible                                                       |
-| 20  | warn  | [prefer-const](https://eslint.org/docs/rules/prefer-const)                       | require `const` declarations for variables that are never reassigned after declared                                    |
-| 21  | warn  | [prefer-destructuring](https://eslint.org/docs/rules/prefer-destructuring)       | require destructuring from arrays and/or objects                                                                       |
-| 22  | warn  | [prefer-numeric-literals](https://eslint.org/docs/rules/prefer-numeric-literals) | disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals                      |
-| 23  | warn  | [prefer-object-spread](https://eslint.org/docs/rules/prefer-object-spread)       | disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead. |
-| 24  | warn  | [prefer-template](https://eslint.org/docs/rules/prefer-template)                 | require template literals instead of string concatenation                                                              |
-| 25  | warn  | [spaced-comment](https://eslint.org/docs/rules/spaced-comment)                   | enforce consistent spacing after the `//` or `/*` in a comment                                                         |
-| 26  | warn  | [yoda](https://eslint.org/docs/rules/yoda)                                       | require or disallow "Yoda" conditions                                                                                  |
-| 27  | warn  | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options)  |
+| 11  | warn  | [no-unused-labels](https://eslint.org/docs/rules/no-unused-labels)               | disallow unused labels                                                                                                 |
+| 12  | warn  | [no-useless-computed-key](https://eslint.org/docs/rules/no-useless-computed-key) | disallow unnecessary computed property keys in object literals                                                         |
+| 13  | warn  | [no-useless-rename](https://eslint.org/docs/rules/no-useless-rename)             | disallow renaming import, export, and destructured assignments to the same name                                        |
+| 14  | warn  | [no-useless-return](https://eslint.org/docs/rules/no-useless-return)             | disallow redundant return statements                                                                                   |
+| 15  | warn  | [no-var](https://eslint.org/docs/rules/no-var)                                   | require `let` or `const` instead of `var`                                                                              |
+| 16  | warn  | [object-shorthand](https://eslint.org/docs/rules/object-shorthand)               | require or disallow method and property shorthand syntax for object literals                                           |
+| 17  | warn  | [one-var](https://eslint.org/docs/rules/one-var)                                 | enforce variables to be declared either together or separately in functions                                            |
+| 18  | warn  | [operator-assignment](https://eslint.org/docs/rules/operator-assignment)         | require or disallow assignment operator shorthand where possible                                                       |
+| 19  | warn  | [prefer-const](https://eslint.org/docs/rules/prefer-const)                       | require `const` declarations for variables that are never reassigned after declared                                    |
+| 20  | warn  | [prefer-destructuring](https://eslint.org/docs/rules/prefer-destructuring)       | require destructuring from arrays and/or objects                                                                       |
+| 21  | warn  | [prefer-numeric-literals](https://eslint.org/docs/rules/prefer-numeric-literals) | disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals                      |
+| 22  | warn  | [prefer-object-spread](https://eslint.org/docs/rules/prefer-object-spread)       | disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead. |
+| 23  | warn  | [prefer-template](https://eslint.org/docs/rules/prefer-template)                 | require template literals instead of string concatenation                                                              |
+| 24  | warn  | [spaced-comment](https://eslint.org/docs/rules/spaced-comment)                   | enforce consistent spacing after the `//` or `/*` in a comment                                                         |
+| 25  | warn  | [yoda](https://eslint.org/docs/rules/yoda)                                       | require or disallow "Yoda" conditions                                                                                  |
+| 26  | warn  | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options)  |
 
 <!-- rules end -->
 
