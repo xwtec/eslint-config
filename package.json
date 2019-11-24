@@ -73,6 +73,5 @@
     "name": "xwtec",
     "url": "https://github.com/xwtec"
   },
-  "prettier": "@xwtec/prettier-config",
   "sideEffects": false
 }
