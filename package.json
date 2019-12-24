@@ -1,17 +1,28 @@
 {
   "name": "@xwtec/eslint-config",
-  "version": "6.0.21",
+  "version": "6.1.0",
   "description": "ESLint Configuration for xwtec projects",
-  "main": "index.js",
   "keywords": [
     "xwtec",
     "eslint",
     "config"
   ],
+  "homepage": "https://github.com/xwtec/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/xwtec/eslint-config/issues"
+  },
+  "repository": "xwtec/eslint-config",
+  "license": "MIT",
+  "author": {
+    "name": "xwtec",
+    "url": "https://github.com/xwtec"
+  },
   "files": [
     "index.js",
     "configs"
   ],
+  "sideEffects": false,
+  "main": "index.js",
   "scripts": {
     "build": "npm-run-all build:*",
     "build:rules": "node -r esm ./scripts/rules",
@@ -27,17 +38,16 @@
     "release": "run-s lint build test format dist",
     "test": "eslint **/*.js --config ./index.js"
   },
-  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "dependencies": {
     "babel-eslint": "10.0.3",
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-prettier": "3.1.2"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "repository": "xwtec/eslint-config",
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@fisker/commitlint-config": "1.1.4",
@@ -60,18 +70,8 @@
     "eslint": "*",
     "prettier": "*"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "bugs": {
-    "url": "https://github.com/xwtec/eslint-config/issues"
-  },
-  "homepage": "https://github.com/xwtec/eslint-config#readme",
-  "author": {
-    "name": "xwtec",
-    "url": "https://github.com/xwtec"
-  },
-  "sideEffects": false
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
