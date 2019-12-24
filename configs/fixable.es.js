@@ -6,6 +6,7 @@ const ruleIDs = [
   'implicit-arrow-linebreak',
   'jsx-quotes',
   'prefer-object-spread',
+  'prefer-exponentiation-operator',
 
   // ECMAScript 6
   'arrow-body-style',
