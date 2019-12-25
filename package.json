@@ -53,7 +53,7 @@
     "@fisker/commitlint-config": "1.1.4",
     "@fisker/husky-config": "1.1.5",
     "@fisker/lint-staged-config": "1.0.8",
-    "@xwtec/eslint-config": "6.0.21",
+    "@xwtec/eslint-config": "6.1.0",
     "@xwtec/prettier-config": "1.0.3",
     "cz-conventional-changelog": "3.0.2",
     "eslint": "6.8.0",
