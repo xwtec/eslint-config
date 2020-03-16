@@ -25,6 +25,9 @@ module.exports = {
     // disallow duplicate arguments in functions
     'no-dupe-args': 'error',
 
+    // disallow duplicate conditions in if-else-if chains
+    'no-dupe-else-if': 'error',
+
     // disallow duplicate keys when creating object literals
     'no-dupe-keys': 'error',
 
@@ -52,6 +55,9 @@ module.exports = {
     // disallow overwriting functions written as function declarations
     'no-func-assign': 'error',
 
+    // disallow assigning to imported bindings
+    'no-import-assign': 'error',
+
     // disallow function or variable declarations in nested blocks
     'no-inner-declarations': 'warn',
 
@@ -69,6 +75,9 @@ module.exports = {
 
     // disallow sparse arrays
     'no-sparse-arrays': 'warn',
+
+    // disallow returning values from setters
+    'no-setter-return': 'error',
 
     // Avoid code that looks like two expressions but is actually one
     // https://eslint.org/docs/rules/no-unexpected-multiline
