@@ -109,9 +109,8 @@ jobs:
 
       - name: Build Package
         run: yarn build
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@master
-        with:
-          name: dist
-          path: dist
+      # - name: Upload Artifact
+      #   uses: actions/upload-artifact@master
+      #   with:
+      #     name: dist
+      #     path: dist
