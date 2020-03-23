@@ -30,7 +30,7 @@ const ruleIDs = [
 ];
 
 const rules = Object.fromEntries
-  ? Object.fromEntries(ruleIDs.map(rule => [rule, 'warn']))
+  ? Object.fromEntries(ruleIDs.map((rule) => [rule, 'warn']))
   : ruleIDs.reduce((rules, id) => {
       rules[id] = 'warn';
       return rules;
