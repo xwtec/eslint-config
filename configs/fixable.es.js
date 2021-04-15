@@ -1,5 +1,15 @@
-// https://eslint.org/docs/rules/
-// ALL RULES [...$$('td > [title=fixable]')].map(d => d.parentNode.nextElementSibling.querySelector('a').getAttribute('href'))
+/*
+Get all rules
+
+Open https://eslint.org/docs/rules/
+
+```js
+[...$$('td > [title="fixable"]')]
+  .map(icon => icon.parentNode.nextElementSibling.querySelector('a').getAttribute('href'))
+```
+*/
+
+'use strict';
 
 const ruleIDs = [
   // Stylistic Issues

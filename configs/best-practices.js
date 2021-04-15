@@ -5,6 +5,8 @@ code: https://github.com/airbnb/javascript/blob/master/packages/eslint-config-ai
 rule: https://eslint.org/docs/rules/#best-practices
 */
 
+'use strict';
+
 module.exports = {
   rules: {
     // require the use of === and !==

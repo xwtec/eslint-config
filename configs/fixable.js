@@ -1,5 +1,15 @@
-// https://eslint.org/docs/rules/
-// ALL RULES [...$$('td > [title=fixable]')].map(d => d.parentNode.nextElementSibling.querySelector('a').getAttribute('href'))
+/*
+Get all rules
+
+Open https://eslint.org/docs/rules/
+
+```js
+[...$$('td > [title="fixable"]')]
+  .map(icon => icon.parentNode.nextElementSibling.querySelector('a').getAttribute('href'))
+```
+*/
+
+'use strict';
 
 const ruleIDs = [
   // Possible Errors
@@ -46,6 +56,7 @@ const ruleIDs = [
   'eol-last',
   'func-call-spacing',
   'function-paren-newline',
+  'function-call-argument-newline',
   'indent',
   'key-spacing',
   'keyword-spacing',
@@ -53,6 +64,7 @@ const ruleIDs = [
   'lines-around-comment',
   // 'lines-between-class-members',
   // 'multiline-comment-style',
+  'multiline-ternary',
   'new-parens',
   'newline-per-chained-call',
   // 'no-lonely-if',

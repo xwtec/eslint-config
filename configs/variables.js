@@ -5,6 +5,10 @@ code: https://github.com/airbnb/javascript/blob/master/packages/eslint-config-ai
 rule: https://eslint.org/docs/rules/#variables
 */
 
+'use strict';
+
+const restrictedGlobals = require('confusing-browser-globals');
+
 module.exports = {
   rules: {
     // disallow deletion of variables
@@ -23,5 +27,8 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
+
+    // disallow specific global variables
+    'no-restricted-globals': ['warn', ...restrictedGlobals],
   },
 };

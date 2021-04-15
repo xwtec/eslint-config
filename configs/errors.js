@@ -5,6 +5,8 @@ code: https://github.com/airbnb/javascript/blob/master/packages/eslint-config-ai
 rule: https://eslint.org/docs/rules/#possible-errors
 */
 
+'use strict';
+
 module.exports = {
   rules: {
     // Enforce “for” loop update clause moving the counter in the right direction
@@ -93,6 +95,14 @@ module.exports = {
     // disallow negating the left operand of relational operators
     // https://eslint.org/docs/rules/no-unsafe-negation
     'no-unsafe-negation': 'warn',
+
+    // disallow use of optional chaining in contexts where the undefined value is not allowed
+    // https://eslint.org/docs/rules/no-unsafe-optional-chaining
+    'no-unsafe-optional-chaining': 'warn',
+
+    // require Radix Parameter
+    // https://eslint.org/docs/rules/radix
+    radix: 'warn',
 
     // disallow comparisons with the value NaN
     'use-isnan': 'error',

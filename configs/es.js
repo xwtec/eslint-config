@@ -5,6 +5,8 @@ code: https://github.com/airbnb/javascript/blob/master/packages/eslint-config-ai
 rule: https://eslint.org/docs/rules/#ecmascript-6
 */
 
+'use strict';
+
 module.exports = {
   rules: {
     // verify super() callings in constructors
