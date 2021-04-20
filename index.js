@@ -17,6 +17,18 @@ module.exports = {
       globalReturn: false,
       jsx: true,
     },
+    babelOptions: {
+      parserOpts: {
+        allowAwaitOutsideFunction: true,
+        plugins: [
+          'classProperties',
+          'exportDefaultFrom',
+          'classPrivateProperties',
+          'classPrivateMethods',
+          'importMeta',
+        ],
+      },
+    },
   },
   extends: [
     // fixable
