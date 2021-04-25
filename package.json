@@ -61,7 +61,7 @@
     "@xwtec/eslint-config": "7.0.2",
     "@xwtec/prettier-config": "2.0.1",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "7.24.0",
+    "eslint": "7.25.0",
     "esm": "3.2.25",
     "husky": "6.0.0",
     "lint-staged": "10.5.4",
