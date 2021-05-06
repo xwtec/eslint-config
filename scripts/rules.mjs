@@ -1,11 +1,14 @@
 import {join} from 'path';
 import {readFileSync} from 'fs';
-import printer from './shared/markdown-rules-printer';
-import writeFile from './shared/write-file';
-import getRules from './shared/get-rules';
-import parseRuleId from './shared/parse-rule-id';
-import sortRuleId from './shared/sort-rule-id';
-import config from '..';
+import createEsmUtils from 'esm-utils'
+import printer from './shared/markdown-rules-printer.mjs';
+import writeFile from './shared/write-file.mjs';
+import getRules from './shared/get-rules.mjs';
+import parseRuleId from './shared/parse-rule-id.mjs';
+import sortRuleId from './shared/sort-rule-id.mjs';
+import config from '../index.js';
+
+const {dirname} = createEsmUtils(import.meta)
 
 const rules = getRules(config);
 const data = Object.keys(rules)
@@ -36,7 +39,7 @@ const content = [
   RULE_END_MARK,
 ].join('\n\n');
 
-const readmeFile = join(__dirname, `../readme.md`);
+const readmeFile = join(dirname, `../readme.md`);
 const readme = readFileSync(readmeFile, 'utf8').replace(
   new RegExp(`${RULE_START_MARK}[\\s\\S]*?${RULE_END_MARK}`, 'm'),
   content

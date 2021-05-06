@@ -1,6 +1,6 @@
-import getRules from './get-rules';
-import sortRuleId from './sort-rule-id';
-import parseRuleId from './parse-rule-id';
+import getRules from './get-rules.mjs';
+import sortRuleId from './sort-rule-id.mjs';
+import parseRuleId from './parse-rule-id.mjs';
 
 function getResult(compare) {
   const {local, foreign, filter} = compare;

@@ -1,4 +1,4 @@
-const mem = require('mem');
+import mem from 'mem';
 
 const numericType = ['off', 'warn', 'error'];
 
