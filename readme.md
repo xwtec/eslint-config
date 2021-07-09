@@ -76,8 +76,9 @@ npx eslint "**/*.js"
 | 19  | error | [no-sequences](https://eslint.org/docs/rules/no-sequences)                       | disallow comma operators                                                            |
 | 20  | error | [no-setter-return](https://eslint.org/docs/rules/no-setter-return)               | disallow returning values from setters                                              |
 | 21  | error | [no-undef](https://eslint.org/docs/rules/no-undef)                               | disallow the use of undeclared variables unless mentioned in `/*global */` comments |
-| 22  | error | [require-yield](https://eslint.org/docs/rules/require-yield)                     | require generator functions to contain `yield`                                      |
-| 23  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
+| 22  | error | [radix](https://eslint.org/docs/rules/radix)                                     | enforce the consistent use of the radix argument when using `parseInt()`            |
+| 23  | error | [require-yield](https://eslint.org/docs/rules/require-yield)                     | require generator functions to contain `yield`                                      |
+| 24  | error | [use-isnan](https://eslint.org/docs/rules/use-isnan)                             | require calls to `isNaN()` when checking for `NaN`                                  |
 
 ### Warn
 
@@ -120,41 +121,41 @@ npx eslint "**/*.js"
 | 35  | warn | [no-useless-escape](https://eslint.org/docs/rules/no-useless-escape)                       | disallow unnecessary escape characters                                                   |
 | 36  | warn | [no-void](https://eslint.org/docs/rules/no-void)                                           | disallow `void` operators                                                                |
 | 37  | warn | [no-with](https://eslint.org/docs/rules/no-with)                                           | disallow `with` statements                                                               |
-| 38  | warn | [radix](https://eslint.org/docs/rules/radix)                                               | enforce the consistent use of the radix argument when using `parseInt()`                 |
-| 39  | warn | [valid-typeof](https://eslint.org/docs/rules/valid-typeof)                                 | enforce comparing `typeof` expressions against valid strings                             |
+| 38  | warn | [valid-typeof](https://eslint.org/docs/rules/valid-typeof)                                 | enforce comparing `typeof` expressions against valid strings                             |
 
 ### Fixable
 
-|  #  | Type  | Rule                                                                                           | Description                                                                                                            |
-| :-: | :---: | :--------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-|  1  | warn  | [curly](https://eslint.org/docs/rules/curly)                                                   | enforce consistent brace style for all control statements                                                              |
-|  2  | warn  | [dot-notation](https://eslint.org/docs/rules/dot-notation)                                     | enforce dot notation whenever possible                                                                                 |
-|  3  | error | [eqeqeq](https://eslint.org/docs/rules/eqeqeq)                                                 | require the use of `===` and `!==`                                                                                     |
-|  4  | warn  | [no-div-regex](https://eslint.org/docs/rules/no-div-regex)                                     | disallow division operators explicitly at the beginning of regular expressions                                         |
-|  5  | warn  | [no-else-return](https://eslint.org/docs/rules/no-else-return)                                 | disallow `else` blocks after `return` statements in `if` statements                                                    |
-|  6  | warn  | [no-extra-bind](https://eslint.org/docs/rules/no-extra-bind)                                   | disallow unnecessary calls to `.bind()`                                                                                |
-|  7  | warn  | [no-extra-boolean-cast](https://eslint.org/docs/rules/no-extra-boolean-cast)                   | disallow unnecessary boolean casts                                                                                     |
-|  8  | warn  | [no-extra-label](https://eslint.org/docs/rules/no-extra-label)                                 | disallow unnecessary labels                                                                                            |
-|  9  | warn  | [no-regex-spaces](https://eslint.org/docs/rules/no-regex-spaces)                               | disallow multiple spaces in regular expressions                                                                        |
-| 10  | warn  | [no-undef-init](https://eslint.org/docs/rules/no-undef-init)                                   | disallow initializing variables to `undefined`                                                                         |
-| 11  | warn  | [no-unneeded-ternary](https://eslint.org/docs/rules/no-unneeded-ternary)                       | disallow ternary operators when simpler alternatives exist                                                             |
-| 12  | warn  | [no-unused-labels](https://eslint.org/docs/rules/no-unused-labels)                             | disallow unused labels                                                                                                 |
-| 13  | warn  | [no-useless-computed-key](https://eslint.org/docs/rules/no-useless-computed-key)               | disallow unnecessary computed property keys in objects and classes                                                     |
-| 14  | warn  | [no-useless-rename](https://eslint.org/docs/rules/no-useless-rename)                           | disallow renaming import, export, and destructured assignments to the same name                                        |
-| 15  | warn  | [no-useless-return](https://eslint.org/docs/rules/no-useless-return)                           | disallow redundant return statements                                                                                   |
-| 16  | warn  | [no-var](https://eslint.org/docs/rules/no-var)                                                 | require `let` or `const` instead of `var`                                                                              |
-| 17  | warn  | [object-shorthand](https://eslint.org/docs/rules/object-shorthand)                             | require or disallow method and property shorthand syntax for object literals                                           |
-| 18  | warn  | [one-var](https://eslint.org/docs/rules/one-var)                                               | enforce variables to be declared either together or separately in functions                                            |
-| 19  | warn  | [operator-assignment](https://eslint.org/docs/rules/operator-assignment)                       | require or disallow assignment operator shorthand where possible                                                       |
-| 20  | warn  | [prefer-const](https://eslint.org/docs/rules/prefer-const)                                     | require `const` declarations for variables that are never reassigned after declared                                    |
-| 21  | warn  | [prefer-destructuring](https://eslint.org/docs/rules/prefer-destructuring)                     | require destructuring from arrays and/or objects                                                                       |
-| 22  | warn  | [prefer-exponentiation-operator](https://eslint.org/docs/rules/prefer-exponentiation-operator) | disallow the use of `Math.pow` in favor of the `**` operator                                                           |
-| 23  | warn  | [prefer-numeric-literals](https://eslint.org/docs/rules/prefer-numeric-literals)               | disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals                      |
-| 24  | warn  | [prefer-object-spread](https://eslint.org/docs/rules/prefer-object-spread)                     | disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead. |
-| 25  | warn  | [prefer-template](https://eslint.org/docs/rules/prefer-template)                               | require template literals instead of string concatenation                                                              |
-| 26  | warn  | [spaced-comment](https://eslint.org/docs/rules/spaced-comment)                                 | enforce consistent spacing after the `//` or `/*` in a comment                                                         |
-| 27  | warn  | [yoda](https://eslint.org/docs/rules/yoda)                                                     | require or disallow "Yoda" conditions                                                                                  |
-| 28  | warn  | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options)                |
+|  #  | Type  | Rule                                                                                               | Description                                                                                                            |
+| :-: | :---: | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+|  1  | warn  | [curly](https://eslint.org/docs/rules/curly)                                                       | enforce consistent brace style for all control statements                                                              |
+|  2  | warn  | [dot-notation](https://eslint.org/docs/rules/dot-notation)                                         | enforce dot notation whenever possible                                                                                 |
+|  3  | error | [eqeqeq](https://eslint.org/docs/rules/eqeqeq)                                                     | require the use of `===` and `!==`                                                                                     |
+|  4  | warn  | [no-div-regex](https://eslint.org/docs/rules/no-div-regex)                                         | disallow division operators explicitly at the beginning of regular expressions                                         |
+|  5  | warn  | [no-else-return](https://eslint.org/docs/rules/no-else-return)                                     | disallow `else` blocks after `return` statements in `if` statements                                                    |
+|  6  | warn  | [no-extra-bind](https://eslint.org/docs/rules/no-extra-bind)                                       | disallow unnecessary calls to `.bind()`                                                                                |
+|  7  | warn  | [no-extra-boolean-cast](https://eslint.org/docs/rules/no-extra-boolean-cast)                       | disallow unnecessary boolean casts                                                                                     |
+|  8  | warn  | [no-extra-label](https://eslint.org/docs/rules/no-extra-label)                                     | disallow unnecessary labels                                                                                            |
+|  9  | warn  | [no-regex-spaces](https://eslint.org/docs/rules/no-regex-spaces)                                   | disallow multiple spaces in regular expressions                                                                        |
+| 10  | warn  | [no-undef-init](https://eslint.org/docs/rules/no-undef-init)                                       | disallow initializing variables to `undefined`                                                                         |
+| 11  | warn  | [no-unneeded-ternary](https://eslint.org/docs/rules/no-unneeded-ternary)                           | disallow ternary operators when simpler alternatives exist                                                             |
+| 12  | warn  | [no-unused-labels](https://eslint.org/docs/rules/no-unused-labels)                                 | disallow unused labels                                                                                                 |
+| 13  | warn  | [no-useless-computed-key](https://eslint.org/docs/rules/no-useless-computed-key)                   | disallow unnecessary computed property keys in objects and classes                                                     |
+| 14  | warn  | [no-useless-rename](https://eslint.org/docs/rules/no-useless-rename)                               | disallow renaming import, export, and destructured assignments to the same name                                        |
+| 15  | warn  | [no-useless-return](https://eslint.org/docs/rules/no-useless-return)                               | disallow redundant return statements                                                                                   |
+| 16  | warn  | [no-var](https://eslint.org/docs/rules/no-var)                                                     | require `let` or `const` instead of `var`                                                                              |
+| 17  | warn  | [object-shorthand](https://eslint.org/docs/rules/object-shorthand)                                 | require or disallow method and property shorthand syntax for object literals                                           |
+| 18  | warn  | [one-var](https://eslint.org/docs/rules/one-var)                                                   | enforce variables to be declared either together or separately in functions                                            |
+| 19  | warn  | [operator-assignment](https://eslint.org/docs/rules/operator-assignment)                           | require or disallow assignment operator shorthand where possible                                                       |
+| 20  | warn  | [prefer-const](https://eslint.org/docs/rules/prefer-const)                                         | require `const` declarations for variables that are never reassigned after declared                                    |
+| 21  | warn  | [prefer-destructuring](https://eslint.org/docs/rules/prefer-destructuring)                         | require destructuring from arrays and/or objects                                                                       |
+| 22  | warn  | [prefer-exponentiation-operator](https://eslint.org/docs/rules/prefer-exponentiation-operator)     | disallow the use of `Math.pow` in favor of the `**` operator                                                           |
+| 23  | warn  | [prefer-numeric-literals](https://eslint.org/docs/rules/prefer-numeric-literals)                   | disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals                      |
+| 24  | warn  | [prefer-object-spread](https://eslint.org/docs/rules/prefer-object-spread)                         | disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead. |
+| 25  | warn  | [prefer-template](https://eslint.org/docs/rules/prefer-template)                                   | require template literals instead of string concatenation                                                              |
+| 26  | warn  | [spaced-comment](https://eslint.org/docs/rules/spaced-comment)                                     | enforce consistent spacing after the `//` or `/*` in a comment                                                         |
+| 27  | warn  | [yoda](https://eslint.org/docs/rules/yoda)                                                         | require or disallow "Yoda" conditions                                                                                  |
+| 28  | warn  | [import/order](https://github.com/benmosher/eslint-plugin-import/blob/v2.23.4/docs/rules/order.md) |
+| 29  | warn  | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#options)                    |
 
 <!-- rules end -->
 

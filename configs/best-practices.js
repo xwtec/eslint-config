@@ -138,6 +138,6 @@ module.exports = {
     'no-with': 'warn',
 
     // require use of the second argument for parseInt()
-    radix: 'warn',
+    radix: 'error',
   },
 };

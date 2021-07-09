@@ -38,6 +38,9 @@ module.exports = {
     './configs/es.js',
     './configs/style.js',
 
+    // plugins
+    './plugins/import.js',
+
     // prettier
     'eslint-config-prettier',
     './configs/prettier.js',
