@@ -1,9 +1,8 @@
-
 'use strict';
 
 module.exports = {
   plugins: ['import'],
   rules: {
-    'import/order': 'warn'
-  }
+    'import/order': 'warn',
+  },
 };
